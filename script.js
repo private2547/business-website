@@ -7,16 +7,15 @@ form.addEventListener("submit", function(event) {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    const whatsappMessage =
-        "Hello Abba Ismail Global Services!%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Email: " + encodeURIComponent(email) + "%0A" +
-        "Message: " + encodeURIComponent(message);
+    const text =
+        "Hello Abba Ismail Global Services!\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Message: " + message;
 
     const whatsappURL =
-        "https://wa.me/2348133216193?text=" + whatsappMessage;
+        "https://wa.me/2348133216193?text=" +
+        encodeURIComponent(text);
 
-    window.open(whatsappURL, "_blank");
-
-    form.reset();
+    window.location.href = whatsappURL;
 });
