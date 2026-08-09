@@ -349,3 +349,12 @@ form button {
         font-size: 14px;
     }
 }
+/* LOGO */
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
