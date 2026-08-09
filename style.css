@@ -232,3 +232,64 @@ form button {
         font-size: 16px;
     }
 }
+/* SERVICES */
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: white;
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #0b5d3b;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.service-btn {
+    display: inline-block;
+    background: #0b5d3b;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.service-btn:hover {
+    opacity: 0.85;
+}
