@@ -1,7 +1,16 @@
-const buttons = document.querySelectorAll("button");
+const form = document.getElementById("contactForm");
 
-buttons.forEach(function(button) {
-    button.addEventListener("click", function() {
-        alert("Thank you for contacting Abba Ismail Global Services!");
-    });
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    const formMessage = document.getElementById("formMessage");
+
+    formMessage.textContent =
+        "Thank you, " + name + "! Your message has been received.";
+
+    formMessage.style.marginTop = "15px";
+
+    form.reset();
 });
