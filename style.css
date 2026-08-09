@@ -293,3 +293,37 @@ form button {
 .service-btn:hover {
     opacity: 0.85;
 }
+/* ABOUT & WHY CHOOSE US */
+
+.about-text {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.why-card {
+    background: white;
+    width: 280px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.why-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.why-card h3 {
+    color: #0b5d3b;
+    margin-bottom: 10px;
+    }
