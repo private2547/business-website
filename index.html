@@ -63,13 +63,40 @@
             </p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
+<section id="contact">
+    <h2>Contact Us</h2>
 
-            <p>Ready to work with us?</p>
+    <p>Ready to work with us? Send us a message.</p>
 
-            <button>Contact Us</button>
-        </section>
+    <form id="contactForm">
+
+        <input 
+            type="text" 
+            id="name" 
+            placeholder="Your Name" 
+            required
+        >
+
+        <input 
+            type="email" 
+            id="email" 
+            placeholder="Your Email" 
+            required
+        >
+
+        <textarea 
+            id="message" 
+            placeholder="Your Message" 
+            rows="5" 
+            required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p id="formMessage"></p>
+</section>
 
     </main>
 
