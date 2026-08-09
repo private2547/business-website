@@ -338,3 +338,14 @@ form button {
     color: #0b5d3b;
     margin-bottom: 10px;
     }
+@media (max-width: 600px) {
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+}
