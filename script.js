@@ -4,13 +4,19 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
-    const formMessage = document.getElementById("formMessage");
 
-    formMessage.textContent =
-        "Thank you, " + name + "! Your message has been received.";
+    const whatsappMessage =
+        "Hello Abba Ismail Global Services!%0A%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Email: " + encodeURIComponent(email) + "%0A" +
+        "Message: " + encodeURIComponent(message);
 
-    formMessage.style.marginTop = "15px";
+    const whatsappURL =
+        "https://wa.me/2348133216193?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank");
 
     form.reset();
 });
